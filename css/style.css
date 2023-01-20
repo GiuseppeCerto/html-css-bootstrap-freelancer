@@ -34,24 +34,42 @@ img{
     max-width: 100%;
 }
 
+ul,
+li,
+menu{
+    list-style-type: none;
+}
+
 
 /****** BOOTSTRAP ******/
 
 
+/****** HEADER ******/
+
 .bg-header{
     background-color: rgba(44,62,80,255);
+    color:white;
 }
 
-.title-header{
-    text-transform: uppercase;
+.header-title > h1{
     font-size: 18px;
-    font-weight: 800;
-    margin: 35px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
-.menu-nav{
-    padding: 10px 10px;
-    border: 1px solid white;
-    margin: 25px 0;
-    border-radius: 5px;
+
+/****** HERO ******/
+
+
+.hero{
+    background-color: rgba(26,188,156,255);
+}
+
+.portfolio-section{
+
+}
+
+.about-section{
+    background-color: rgba(26,188,156,255);
 }
