@@ -1,0 +1,57 @@
+/****** QUERY ******/
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+}
+
+
+/****** DEBUG ******/
+
+
+img{
+    max-width: 100%;
+}
+
+
+/****** BOOTSTRAP ******/
+
+
+.bg-header{
+    background-color: rgba(44,62,80,255);
+}
+
+.title-header{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 35px 0;
+}
+
+.menu-nav{
+    padding: 10px 10px;
+    border: 1px solid white;
+    margin: 25px 0;
+    border-radius: 5px;
+}
