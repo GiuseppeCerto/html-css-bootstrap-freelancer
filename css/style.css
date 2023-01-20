@@ -1,27 +1,38 @@
 /****** QUERY ******/
 
 
-// Small devices (landscape phones, 576px and up)
+/* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
 }
 
-// Medium devices (tablets, 768px and up)
+/* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+    .ham-menu > i{
+        display: none;
+    }
+
+    .list-menu > li{
+        display: block !important;
+    }
+
+    .hero-title{
+        font-size: 62px !important; 
+    }
 }
 
-// Large devices (desktops, 992px and up)
+/* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
 }
 
-// X-Large devices (large desktops, 1200px and up)
+/* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
 }
 
-// XX-Large devices (larger desktops, 1400px and up)
+/* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
 }
@@ -46,9 +57,14 @@ menu{
 
 /****** HEADER ******/
 
+
 .bg-header{
     background-color: rgba(44,62,80,255);
     color:white;
+}
+
+.header-nav{
+    height: 90px;
 }
 
 .header-title > h1{
@@ -58,18 +74,81 @@ menu{
     margin-bottom: 0;
 }
 
+.menu-nav{
+    display: flex;
+    justify-content: end;
+}
+
+
+.list-menu{
+    margin: 0;
+    gap: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+}
+
+.list-menu > li{
+    display: none;
+}
+
+.ham-menu > i{
+    color: rgba(136,136,136,255);
+    font-size: 18px;
+    padding: 5px 8px;
+    border: 1px solid rgba(177,181,186,255);
+    border-radius: 5px;
+}
 
 /****** HERO ******/
 
 
 .hero{
     background-color: rgba(26,188,156,255);
+    color: white;
 }
 
-.portfolio-section{
-
+.image-hero{
+    max-width: 228px;
+    margin-top: 40px;
 }
+
+.hero-title{
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+.utility-star{
+    font-size: 30px;
+    margin: 30px 8px 25px 8px;
+}
+
+/* .utility-star::after{
+    content: "";
+    display: block;
+    width: 75px;
+    background-color: white;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.utility-star::before{
+    content: "";
+    display: block;
+    width: 75px;
+    background-color: white;
+    height: 4px;
+    border-radius: 5px;
+} */
 
 .about-section{
     background-color: rgba(26,188,156,255);
 }
+
+/* .hero-content{
+    display: flex;
+    justify-content: center;
+} */
