@@ -20,11 +20,57 @@
     .hero-title{
         font-size: 62px !important; 
     }
+
+    .border-right{
+        width: 140px !important;
+    }
+
+    .border-left{
+        width: 140px !important;
+    }
+
+    .text-hero{
+        font-size: 23px !important;
+        margin-bottom: 70px !important;
+    }
+
+    .section-title{
+        font-size: 45px !important;
+        margin-top: 90px !important;
+    }
+
+    .small-container{
+        max-width: 670px !important;
+    }
+
+    .download-button{
+        margin-bottom: 60px !important;
+    }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+    .border-right{
+        width: 170px !important;
+    }
+
+    .border-left{
+        width: 170px !important;
+    }
+
+    .text-hero{
+        font-size: 28px !important;
+    }
+
+    .section-title{
+        font-size: 52px !important;
+    }
+
+    .small-container{
+        max-width: 970px !important;
+    }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -126,29 +172,191 @@ menu{
     margin: 30px 8px 25px 8px;
 }
 
-/* .utility-star::after{
+.border-left{
     content: "";
     display: block;
     width: 75px;
-    background-color: white;
+    background-color: currentColor;
     height: 4px;
     border-radius: 5px;
+    position: absolute;
+    top: 50%;  
+    left: calc(50% - 40px);
+    transform: translateX(-100%);
 }
 
-.utility-star::before{
+.border-right{
     content: "";
     display: block;
     width: 75px;
-    background-color: white;
+    background-color: currentColor;
     height: 4px;
     border-radius: 5px;
-} */
+    position: absolute;
+    top: 50%;  
+    right: calc(50% - 40px);
+    transform: translateX(100%);
+}
 
 .about-section{
     background-color: rgba(26,188,156,255);
 }
 
-/* .hero-content{
-    display: flex;
-    justify-content: center;
-} */
+
+.text-hero{
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 43px;
+}
+
+.ms-border::after{
+    content: "";
+    display: block;
+    width: 6px;
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right:-8px;
+    transform: translateX(+50%);
+}
+
+
+/****** PORTFOLIO SECTION ******/
+
+.section-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 55px 0 0 0;
+}
+
+.gallery-image{
+    border-radius: 10px;
+}
+
+.portfolio-gallery{
+    margin-bottom: 85px;
+}
+
+
+/****** ABOPUT SECTION ******/
+
+
+.about-section{
+    margin-top: 85px;
+    color: white;
+}
+
+.small-container{
+    max-width: 305px;
+}
+
+.text-about{
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+
+.download-button > a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.download-button{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid currentColor;
+    border-radius: 8px;
+    margin: 25px 0 25px 0;
+}
+
+
+/****** CONTACT SECTION ******/
+
+
+.contact-list{
+    font-size: 20px;
+    padding-bottom: 23px;
+    margin-bottom: 15px;
+}
+
+.user-information-line::after{
+    content: "";
+    display: block;
+    width: 99%;
+    background-color: rgba(216,216,216,255);
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left:12px;
+}
+
+.user-message{
+    margin-top: 15px;
+    padding-bottom: 0;
+}
+
+.send-button{
+    margin-top: 145px;
+    background-color: rgba(26,188,156,255);
+    color: white;
+    width: fit-content;
+    padding: 10px 18px;
+    border-radius: 10px;
+}
+
+.send-button::before{
+    content: "";
+    display: block;
+    width: 99%;
+    background-color: rgba(216,216,216,255);
+    height: 1px;
+    position: absolute;
+    bottom: 90px;
+    left:12px;
+}
+
+
+/****** INFORMATION ******/
+
+
+.information-section{
+    background-color: rgba(58,84,109,255);
+    padding-top: 60px;
+    color: white;
+}
+
+.title-information{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.address-info{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon-web > i{
+    font-size: 20px;
+    min-width: 53px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+}
+
+.text-information{
+    font-size: 20px;
+}
+
+.text-information > span{
+    color: rgba(37,156,141,255);
+}
+
+
+/****** COPY ******/
+
+.copy-section{
+    background-color: rgba(44,62,80,255);
+}
