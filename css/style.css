@@ -9,14 +9,6 @@
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    .ham-menu > i{
-        display: none;
-    }
-
-    .list-menu > li{
-        display: block !important;
-    }
-
     .hero-title{
         font-size: 62px !important; 
     }
@@ -104,39 +96,13 @@ menu{
 /****** HEADER ******/
 
 
-.bg-header{
+.header-section{
     background-color: rgba(44,62,80,255);
-    color:white;
 }
 
-.header-nav{
-    height: 90px;
-}
-
-.header-title > h1{
-    font-size: 18px;
+.header-title > a{
+    font-size: 28px;
     font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-
-.menu-nav{
-    display: flex;
-    justify-content: end;
-}
-
-
-.list-menu{
-    margin: 0;
-    gap: 30px;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 600;
-    display: flex;
-}
-
-.list-menu > li{
-    display: none;
 }
 
 .ham-menu > i{
@@ -163,13 +129,11 @@ menu{
 .hero-title{
     font-size: 36px;
     font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 35px;
 }
 
 .utility-star{
     font-size: 30px;
-    margin: 30px 8px 25px 8px;
+    margin: 32px 0px 25px 0px;
 }
 
 .border-left{
@@ -240,7 +204,7 @@ menu{
 }
 
 
-/****** ABOPUT SECTION ******/
+/****** ABOUT SECTION ******/
 
 
 .about-section{
@@ -254,7 +218,6 @@ menu{
 
 .text-about{
     font-size: 20px;
-    margin-bottom: 26px;
 }
 
 .download-button > a{
@@ -293,11 +256,21 @@ menu{
 
 .user-message{
     margin-top: 15px;
-    padding-bottom: 0;
+    padding-bottom: 145px;
+}
+
+.user-message::after{
+    content: "";
+    display: block;
+    width: 99%;
+    background-color: rgba(216,216,216,255);
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 12px;
 }
 
 .send-button{
-    margin-top: 145px;
     background-color: rgba(26,188,156,255);
     color: white;
     width: fit-content;
@@ -305,16 +278,6 @@ menu{
     border-radius: 10px;
 }
 
-.send-button::before{
-    content: "";
-    display: block;
-    width: 99%;
-    background-color: rgba(216,216,216,255);
-    height: 1px;
-    position: absolute;
-    bottom: 90px;
-    left:12px;
-}
 
 
 /****** INFORMATION ******/
@@ -353,7 +316,6 @@ menu{
 .text-information > span{
     color: rgba(37,156,141,255);
 }
-
 
 /****** COPY ******/
 

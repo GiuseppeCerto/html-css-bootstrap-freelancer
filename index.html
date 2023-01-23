@@ -11,31 +11,35 @@
 </head>
 <body>
     
-    <header class="bg-header">
+    <header class="header-section">
+        <nav class="navbar pt-3 pb-3">
+            <div class="container justify-content-between header-nav">
 
-        <div class="container">
-            <div class="row align-items-center header-nav">
-
-                <div class="col header-title">
-                    <h1>start bootstrap</h1>
+                <div class="col d-flex align-items-center header-title">
+                    <a class="navbar-brand text-white text-uppercase" href="#">start bootstrap</a>
                 </div>
-                
-                <div class="col menu-nav">
-
-                    <ul class="list-menu">
-                        <li>portfolio</li>
-                        <li>about</li>
-                        <li>contact</li>
-                    </ul>
-
-                    <div class="ham-menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
                     
+                <div class="col d-flex align-items-center justify-content-end menu-nav">
+
+                    <ul class="navbar-nav d-flex flex-row gap-4 d-none d-md-flex">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase list-nav" href="#">portfolio</a>  
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase list-nav" href="#">about</a>  
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase list-nav" href="#">contact</a>  
+                        </li>
+                    </ul>
+                        
+                    <a class="nav-item d-block d-md-none ham-menu" href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
 
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <main>
@@ -46,7 +50,7 @@
                         <img class="image-hero" src="./img/avatar.svg" alt="#">
                     </div>
                     <div class="col-12 d-flex justify-content-center">
-                        <h2 class="hero-title">start bootstrap</h2>
+                        <h2 class="hero-title mt-5 text-uppercase">start bootstrap</h2>
                     </div>
                     <div class="col-12 d-flex justify-content-center position-relative">
                         <div class="border-left"></div>
@@ -113,10 +117,10 @@
                         <div class="border-right"></div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <p class="text-about">Freelancer is a free bootsramp theme created by Start Bootstramp. The download includes the complete sourse files including HTML, CSS and JavaScript as well as optional LESS stylesheet for easy cosatumization.</p>
+                        <p class="text-about mb-4">Freelancer is a free bootsramp theme created by Start Bootstramp. The download includes the complete sourse files including HTML, CSS and JavaScript as well as optional LESS stylesheet for easy cosatumization.</p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <p class="text-about">Wether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your project, this tameplate is the perfect starting point!.</p>
+                        <p class="text-about mb-4">Wether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your project, this tameplate is the perfect starting point!.</p>
                     </div>
                     <div class="col-12 d-flex justify-content-center">
                         <div class="download-button">
@@ -142,13 +146,17 @@
                     <div class="col-12 d-flex justify-content-start position-relative contact-list user-information-line">Name</div>
                     <div class="col-12 d-flex justify-content-start position-relative contact-list user-information-line">Email Address</div>
                     <div class="col-12 d-flex justify-content-start position-relative contact-list user-information-line">Phone Number</div>
-                    <div class="col-12 d-flex justify-content-start contact-list user-message">Message</div>
-                    <div class="col-12 d-flex justify-content-start contact-list position-relative">
+                    <div class="col-12 d-flex justify-content-start contact-list position-relative user-message">Message</div>
+                    <div class="col-12 d-flex justify-content-start contact-list">
                         <div class="send-button">Send</div> 
                     </div>
                 </div>
             </div>
         </section>
+
+    </main>
+
+    <footer>
 
         <section class="information-section">
             <div class="container">
@@ -157,9 +165,9 @@
                         <h4 class="title-information">location</h4>
                         <div class="address-info">2215 John Daniel Drive Clark, MO 54243</div>
                     </div>
-                    <div class="col-12 col-md-4 d-flex flex-column text-center justify-content-center mb-5">
+                    <div class="col-12 col-md-4 d-flex flex-column text-center mb-5">
                         <h4 class="title-information">around the web</h4>
-                        <div class="icon-web d-flex gap-3 justify-content-center">
+                        <div class="icon-web d-flex gap-2 justify-content-center">
                             <i class="fa-brands fa-facebook-f"></i>
                             <i class="fa-brands fa-google-plus-g"></i>
                             <i class="fa-brands fa-twitter"></i>
@@ -186,8 +194,8 @@
             </div>
         </section>
 
+    </footer>
 
-    </main>
 
 </body>
 </html>
